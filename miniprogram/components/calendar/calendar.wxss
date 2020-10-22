@@ -1,0 +1,84 @@
+.calendar{
+	width:100%;
+  box-sizing: border-box;
+  padding: 10rpx 40rpx; 
+  margin: 10rpx auto;
+  background: #fff;
+  color: #8c8c8c;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #F3F7FE;
+  margin-bottom: 20rpx;
+}
+.calendar .tit{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36rpx;
+	color: #2A2A2A;
+	padding: 5rpx 0;
+}
+.calendar .tit .current{
+	margin: 0 40rpx;
+}
+.calendar .content{
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	padding-left: 25rpx;
+  text-align: center;
+}
+.calendar .content view{
+  position: relative;
+	width: 52rpx;
+	height: 52rpx;
+	line-height: 52rpx;
+	text-align: center;
+	flex-shrink: 0;
+	font-size: 28rpx;
+  border-radius: 50rpx;
+	color: #7B7F99;
+	margin: 2rpx 15rpx;
+}
+.calendar .content .gray{
+  color: #fff ;
+  opacity: 0;
+  /* background: #ccc; */
+}
+.til{
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  height: 10rpx;
+  width: 10rpx;
+  background: red;
+  border-radius: 10rpx;
+}
+.red{
+  /* background: greenyellow; */
+  background: -webkit-linear-gradient(left,#FE3030,#FF7070);
+  color: #fff !important;
+}
+.today{
+  width: 60rpx !important;
+  height: 60rpx !important;
+  line-height: 35rpx !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F8FB;
+  color: #000 !important;
+  font-weight: 700;
+}
+.today text{
+  height: 20rpx;
+  line-height: 20rpx;
+  
+}
+.todayText{
+  padding-top: 5rpx;
+  font-size: 18rpx;
+}
+.todayActive{
+  background-color: #9BBCF8;
+  color: #fff !important;
+}

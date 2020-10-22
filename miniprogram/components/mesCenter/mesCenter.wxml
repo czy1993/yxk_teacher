@@ -1,0 +1,8 @@
+<!--components/mesCenter/mesCenter.wxml-->
+<view class="mesCenter">
+    <view class="mesCenter-header">消息中心</view>
+    <view class="mesCenter-content">
+        <view wx:for="{{mas}}" wx:key="index" wx:for-item="item">{{item}}</view>
+    </view>
+   
+</view>

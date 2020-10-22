@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  
+  <image class="logo" src="../../img/dl_logo.png"></image>
+  
+  <button open-type="getPhoneNumber"  bindgetphonenumber="getPhoneNumber" >点击进入</button>
+  <view class="popup" wx:if="{{show1}}" >
+    <view class="popup-view"> 
+        <view class="popup-header">提示</view>
+        <view  class="popup-center" > 
+            <view>易选课</view>
+            <view>授权登录查看课程</view>
+        </view>
+        <view class="popup-foot" >
+          <button class="buts"  bindtap="cancel" > 取消  </button>
+          <button class="buts" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" > 授权 </button>
+        </view>
+    </view>
+  </view>
+</view>

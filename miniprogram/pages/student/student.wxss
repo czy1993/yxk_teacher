@@ -1,0 +1,88 @@
+
+.student{
+  width: 94%;
+  padding-top: 20rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+}
+.student-curriculum{
+  min-height: 220rpx;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  border-radius: 5rpx;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #F3F7FE;
+  margin-bottom: 25rpx;
+  color: #333;
+}
+.course-name{
+  flex: 1;
+  min-height: 70rpx;
+  box-sizing: border-box;
+  padding: 10rpx 0;
+  line-height: 50rpx;
+  font-size: 33rpx;
+  font-weight: 700;
+  margin-bottom: 6rpx;
+}
+.course-text{
+  font-size: 30rpx;
+  /* height: 280rpx; */
+}
+.course-text view{
+  line-height: 45rpx;
+}
+.student-view{
+  min-height: 500rpx;
+  margin-bottom: 30rpx;
+  border-radius: 5rpx;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #F3F7FE;
+}
+.student-view .student-li{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 70rpx;
+}
+.studentName{
+  width: 45%;
+  text-align: center
+}
+
+.student-head{
+  background: #5089F2;
+  color: #fff;
+  border-radius: 5rpx 5rpx 0 0;
+}
+.student-view .student-li view{
+  text-align: center
+}
+.textII{
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 40rpx;
+}
+.textII icon{
+  height: 40rpx;
+}
+.student-buts{
+  width: 60%;
+  height: 60rpx;
+  margin: 0 auto;
+  background: #5089F2;
+  border-radius: 10rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  /* margin-bottom: 30rpx; */
+}
+.red{
+  color: #FA262B
+}
+.yellow{
+  color: yellowgreen;
+}

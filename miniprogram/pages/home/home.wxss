@@ -1,0 +1,130 @@
+.home{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5%;
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.input-mode{
+  width: 100%;
+  height: 75rpx;
+  /* border: 1rpx solid #000; */
+  border-radius: 10rpx;
+  margin:  0  auto;
+  box-sizing: border-box;
+  padding: 5rpx 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 450rpx;
+}
+.input-date{
+  width: 500rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 50rpx;
+  background: #F8F8F8;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  color: #9D9A9F;
+}
+.date-icon{
+  height: 50rpx;
+  width: 50rpx;
+}
+.date-calendar{
+  position: absolute;
+  top: 78rpx;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.curriculum-view{
+  margin-top: 20px;
+  height: auto;
+  flex: 1;
+  font-size: 32rpx;
+}
+.noCurriculum-view{
+  margin-top: 50px;
+  flex: 1;
+  font-size: 32rpx;
+  height: 200rpx;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #F3F7FE;
+}
+/* /课程列表/ */
+.curriculum{
+  width: 100%;
+  min-height: 200rpx;
+  border: 1px solid #F3F7FE;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+  padding: 30rpx 15rpx;
+  color: #8c8c8c;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #F3F7FE;
+  margin-bottom: 25rpx;
+}
+.curriculum view{
+  min-height: 50rpx;
+  line-height: 50rpx;
+}
+
+.curriculum-name{
+  font-size: 38rpx;
+  font-weight: 700;
+  margin-bottom: 6rpx;
+}
+.curriculum-buts{
+  width: 180rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 0 auto;
+  text-align: center !important;
+  font-size: 28rpx;
+  background: #5089F2;
+  color: #fff;
+  border-radius: 26rpx;
+  
+}
+/* 消息通知 */
+.mesCenter-view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150rpx;
+  margin-bottom: 25rpx;
+  border: 1px solid #F3F7FE;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #F3F7FE;
+}
+.mesCenter-view-img{
+  height: 50rpx;
+  width: 50rpx;
+  margin:0 20rpx
+}
+.mesCenter-view-swiper{
+  flex: 1;
+  height: 150rpx;
+}
+.mesCenter-view-swiper swiper-item{
+  height: 150rpx !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.mesCenter-tiem{
+  font-size: 26rpx;
+  color: #B8BCC5;
+  line-height: 60rpx;
+}
+.mesCenter-img{
+  display: inline-block;
+  height: 125rpx;
+  width: 100%;
+  margin: 20rpx 0;
+
+  
+}

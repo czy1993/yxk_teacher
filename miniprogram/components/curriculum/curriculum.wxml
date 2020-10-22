@@ -1,0 +1,19 @@
+<!--components/curriculum.wxml-->
+<view>
+  <view wx:for="{{curriculum}}" wx:for-item="item" wx:key="index" class="curriculum">
+    <view class="curriculum-name">{{item.name}}</view>
+    <view>
+      <text>上课时间：</text>
+      <text>{{item.courseStartTime}}</text>
+    </view>
+    <view>
+      <text>上课地点：</text>
+      <text>{{item.address}}</text>
+    </view>
+    <view>
+      <text>课时：</text>
+      <text>+++/+++</text>
+    </view>
+    <view class="curriculum-buts" bindtap="pathNavigateTo">学生名单</view>
+  </view>
+</view>

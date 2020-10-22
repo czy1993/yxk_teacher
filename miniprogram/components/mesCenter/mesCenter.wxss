@@ -1,0 +1,21 @@
+/* components/mesCenter/mesCenter.wxss */
+.mesCenter{
+  padding-top: 35rpx;
+  text-align: center;
+}
+.mesCenter-header{
+  width: 98%;
+  margin: 0 auto;
+  height: 52rpx;
+  border: 1px solid #000;
+  /* border-radius: 2rpx; */
+  line-height: 52rpx;
+  margin-bottom: 20rpx;
+}
+.mesCenter-content view{
+  width: 100%;
+  height: 50rpx;
+  border: 1px solid #000;
+  line-height: 50rpx;
+}
+

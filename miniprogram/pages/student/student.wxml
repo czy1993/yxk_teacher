@@ -1,0 +1,37 @@
+<view class="student">
+  <view class="student-curriculum">
+    <view class="course-name">{{curriculum.name}}</view>
+    <view class="course-text">
+      <view>上课地点： {{curriculum.city}} {{curriculum.address}}</view>
+      <view>上课时间:  {{curriculum.courseDay}}</view>
+      <view>开始: {{curriculum.courseStartTime}}      结束: {{curriculum.courseEndTime}}</view>
+    </view>
+  </view>
+
+  <view class="student-view">
+    <view class="student-head student-li">
+      <text class="studentName">学生名单</text>
+      <text class="textII">出勤状况</text>
+    </view>
+    <scroll-view scroll-y lower-threshold="100" bindscrolltolower="scrollToLower" style="height: 60vh;">
+      <view class="student-li" wx:for="{{studentList}}" wx:key="index" wx:item="{{item}}">
+        <text  class="studentName" >{{item.studentName}}</text>
+        <view class="textII" bindtap="statusChange" data-studentId="{{item.studentId}}"  wx:if="{{item.status=='1'}}">
+          <icon class="icon-small" wx:if="{{item.operation==true}}" type="circle" color='#5089F2' size="20"></icon>
+          <icon class="icon-small" wx:else type="success" color='#5089F2' size="20"></icon>
+          <text>正常</text>
+        </view>
+        <view class="textII red"  wx:elif="{{item.status=='2'}}">
+          
+          <text>已请假</text>
+        </view>
+        <view class="textII yellow"  wx:else>
+          <text>缺勤</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="student-buts" bindtap="pathNavigateTo">
+    提交考勤记录
+  </view>
+</view>

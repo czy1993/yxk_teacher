@@ -1,0 +1,50 @@
+<view class="home">
+	<view class="input-mode">
+		<input class="input-date" value="{{days}}" bindfocus="inputFocus" bindblur="inputBlur" bindinput="inputChange" />
+		<image class="date-icon" src="../../img/icon_rili.png" bindtap="inputFocus" />
+		<!-- wx:if="{{dateShoew===true}}" -->
+		<calendar class="date-calendar" currentYear='{{currentYear}}' currentMonth="{{currentMonth}}" currentDay="{{currentDay}}" bindsendObj='getCalendarData' bind:twoLevelCommentBtn='twoLevelCommentBtnClick'></calendar>
+	</view>
+	<view class="curriculum-view">
+		<view wx:if="{{curriculum.length>0}}">
+			<view wx:for="{{curriculum}}" wx:for-item="item" wx:key="index" class="curriculum">
+				<view class="curriculum-name">{{item.name}}</view>
+				<view>
+					<text>上课时间：</text>
+					<text>{{item.courseStartTime}}</text>
+				</view>
+				<view>
+					<text>结束时间：</text>
+					<text>{{item.courseEndTime}}</text>
+				</view>
+				<view>
+					<text>上课地点：</text>
+					<text>{{item.address}}</text>
+				</view>
+				<view>
+					<text>课时：</text>
+					<text>{{item.courseNo}}</text>
+				</view>
+				<view class="curriculum-buts" data-courseNo="{{item.courseNo}}" data-courseId="{{item.courseId}}" bindtap="pathNavigateTo">学生名单</view>
+			</view>
+		</view>
+
+		<view wx:else class="curriculum">
+			<view>{{days}} 日 </view>
+			<view>暂无课程哦</view>
+		</view>
+	</view>
+
+	<!-- <view class="mesCenter-view">
+		<image class="mesCenter-view-img" src="../../img/ico_tz.png"></image>
+		<swiper class="mesCenter-view-swiper" vertical autoplay circular interval="{{interval}}" duration="{{duration}}">
+			<block wx:for="{{background}}" wx:key="*this">
+				<swiper-item>
+					<view class="mesCenter-tiem">{{item.time}}</view>
+					<view class="mesCenter-text">{{item.text}}</view>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view> -->
+	<image class="mesCenter-img" src="../../img/pic_WY.png"></image>
+</view>

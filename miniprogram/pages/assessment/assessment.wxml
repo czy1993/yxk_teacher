@@ -1,0 +1,26 @@
+<!--pages/assessment/assessment.wxml-->
+<view class="assessment">
+  <view class="student-view">
+      <view class="student-head student-li">
+        <text class="studentName">学生姓名</text>
+        <text class="textII">考勤状态</text>
+      </view>
+      <scroll-view scroll-y lower-threshold="100"  style="max-height: 80vh;">
+      <view class="student-li" wx:for="{{studentList}}" wx:key="index" wx:item="{{item}}">
+        <text class="studentName">{{item.studentName}}</text>
+        <view class="textII" wx:if="{{item.status=='1'}}">
+          <text>正常</text>
+        </view>
+        <view class="textII red" wx:elif="{{item.status=='2'}}">
+          <text>已请假</text>
+        </view>
+        <view class="textII yellow" wx:else>缺勤</view>
+      </view>
+      </scroll-view>
+    </view>
+    <view class="assessment-buts">
+      
+      <view bindtap="pathNavigateTo"> 修改</view>
+      <view bindtap="attendanceSubmit">提交</view>
+    </view>
+</view>

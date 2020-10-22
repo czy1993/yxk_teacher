@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "易选课-教师助手",
+  "usingComponents": {
+      "calendar": "/components/calendar/calendar",
+      "curriculum":"/components/curriculum/curriculum",
+      "mesCenter": "/components/mesCenter/mesCenter"
+  }
+}

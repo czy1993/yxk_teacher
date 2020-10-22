@@ -1,0 +1,77 @@
+/* pages/assessment/assessment.wxss */
+.assessment{
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 32rpx;
+}
+.student-view{
+  min-height: 500rpx;
+  margin-bottom: 30rpx;
+  border-radius: 5rpx;
+  box-shadow: 0rpx 0rpx 10rpx 3rpx #F3F7FE;
+}
+.student-view .student-li{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 70rpx;
+}
+.student-view .student-li view{
+  text-align: center;
+}
+.studentName{
+  width: 45%;
+  text-align: center
+}
+.textII{
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 40rpx;
+}
+.textII icon{
+  height: 40rpx;
+}
+.assessment-buts{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 40rpx;
+  /* background: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.assessment-buts view{
+  height: 70rpx;
+  width: 35%;
+  background: #5089F2;
+  text-align: center;
+  line-height: 70rpx;
+  color: #fff;
+  border-radius: 10rpx;
+}
+.assessment-buts view:nth-child(1){
+  height: 70rpx;
+  width: 38%;
+  background: #F6F8FB;
+  text-align: center;
+  line-height: 70rpx;
+  color: #333333;
+  border-radius: 10rpx;
+}
+.student-head{
+  background: #5089F2;
+  color: #fff;
+  border-radius: 5rpx 5rpx 0 0;
+}
+.red{
+  color: #FA262B
+}
+.yellow{
+  color: yellowgreen;
+}

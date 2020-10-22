@@ -1,0 +1,34 @@
+<view class="calendar">
+	<view class='tit'>
+		<view class='pre' bindtap='gotoPreMonth'>{{'<'}}</view>
+		<view class='current'>{{currentYear}}年{{currentMonth}}月</view>
+		<view class='next' bindtap='gotoNextMonth'>{{'>'}}</view>
+	</view>
+	<view class='content'>
+		<view>日</view>
+		<view>一</view>
+		<view>二</view>
+		<view>三</view>
+		<view>四</view>
+		<view>五</view>
+		<view>六</view>
+		<!-- {{(item.date == currentDay&& item.month == 'current')? 'red' : ''}} -->
+		<view 
+			wx:for="{{allArr}}" 
+			wx:key="index"
+			class="{{item.month == 'current' ? '' : 'gray'}} {{item.current == true? 'red' : ''}} {{currentMonth == month && item.date == today ? 'today' : ''}} {{item.month == 'current' && item.date == currentDay ? 'todayActive' : ''}} "
+      data-date='{{item.date}}'
+      data-month='{{item.month}}'
+      bindtap="dateChoice"
+		>
+    <text >{{item.date}}</text>
+		<text class="todayText" wx:if="{{ month == currentMonth && item.date == today}}">今天</text>
+    <!-- <text 
+      class="til"
+      data-date='{{item.date}}'
+      data-month='{{item.month}}'
+      wx:if="{{item.month == 'current'}}"
+      ></text> -->
+    </view>
+	</view>
+</view>
